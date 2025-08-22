@@ -1,0 +1,151 @@
+/*Styles for Taylor Tyger personal website*/
+
+/*LAYOUT*/
+.fullscreen{
+	background-color: #eeeeee;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+
+.center {
+	position: fixed; /* or absolute */
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/*Typography*/
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+	font-size-adjust: 0.5;
+	font-family: sans-serif;
+	line-height: 1.25;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	letter-spacing: .16em;
+	line-height: 1.5; 
+}
+h1 {
+	font-size: 3.5em; /*48px/16px*/
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2.25em; /*32px/16px*/
+	color: #999999;
+}
+
+h3 {
+	font-size: 1.1em;
+	color: #990000;
+}
+
+.code {
+	font-family: Courier, 'New Courier', monospace;
+	font-size: 16px;
+	text-transform: none;
+	line-height: 1.3;
+	max-width: 800px;
+	letter-spacing: .1em;
+	text-align: left;
+	margin: auto;
+	border: 1px solid +263238;
+	border-radius: 3px;
+	background: #263238;
+	color: #eff;
+	padding: 1rem 3rem;
+	margin: auto;
+	position: relative;
+	counter-reset: step;
+	counter-increment: step 0;
+}
+
+.code p{
+	white-space: pre;
+	position: relative;
+}
+
+.code p::before {
+  position: absolute;
+  top: 0;
+  left: -1.75rem;
+  color: #50646d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  content: counter(step);
+  counter-increment: step;
+}
+
+.red {
+	color: indianred;
+}
+
+span.string{
+	color: lightgreen;
+}
+
+@media screen and (max-width: 600px){h1 {
+		font-size: 2.5em; /*44px/16px*/
+	}
+
+	h2 {
+		font-size: 2em; /*32px/16px*/
+	}
+	body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+		line-height: 1.375;
+	}
+	
+	h1, h2 {
+		letter-spacing: .16em; 
+	}
+	
+	h1 {
+		font-size: 3em; /*44px/16px*/
+	}
+
+	h2 {
+		font-size: 2em; /*32px/16px*/
+	}
+	
+	.code {
+		font-size: 14px;
+		line-height: 1.2;
+		width: 100%;
+		letter-spacing: .02em;
+		border-radius: none;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 2.4em; /*44px/16px*/
+	}
+
+	h2 {
+		font-size: 1.75em; /*32px/16px*/
+	}
+}
+
+@media screen and (max-width: 375px){
+	h1 {
+		font-size: 2em; /*44px/16px*/
+	}
+
+	h2 {
+		font-size: 1.65em; /*32px/16px*/
+	}
+}
+
+
